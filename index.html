@@ -41,7 +41,7 @@
             height: -webkit-fill-available;
             max-height: 100vh;
             overflow-x: auto;
-            overflow-y: hidden;
+            overflow-y: scroll;
         }
 
         .b-example-divider {
@@ -268,7 +268,7 @@
 
         <main class="row">
             <div class="row text-center">
-                <div class="col-4">
+                <div class="col-6">
                     <div class="card mb-4 rounded-3 shadow-sm">
                         <div class="card-header py-3">
                             <h4 class="my-0 fw-normal">Товар 1</h4>
@@ -281,14 +281,121 @@
                                 Email support,
                                 Help center access
                             </p>
-                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Купить</button>
+                            <button type="button" class="btn btn-success">Купить</button>
                         </div>
                     </div>
                 </div>
+                <div class="col-6">
+                    <form>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Имя</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Email</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <button type="submit" class="btn btn-primary">Отправить</button>
+                    </form>
+                </div>
             </div>
-        </main>
-
-    </div>
+            <div class="row-12 text-center">
+                <h2>F.A.Q.</h2>
+                <p class="d-inline-flex gap-1">
+                  <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Как купить?</a>
+                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Как доставить?</button>
+                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Какая гарантия?</button>
+                </p>
+                <div class="row">
+                  <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                      <div class="card card-body">
+                        Оплата банковской картой, через Интернет, возможна через системы электронных платежей.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample2">
+                      <div class="card card-body">
+                        Доставка осуществляется Почтой России, Боксберри, СДЭК, Пикпоинт
+                      </div>
+                    </div>
+                  </div>
+                    <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample3">
+                      <div class="card card-body">
+                        При отказе Покупателя от товара, который был оплачен онлайн банковской картой, денежные средства за него будут автоматически возвращены на банковскую карту, с которой указанный товар был оплачен.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Номер</th>
+                  <th scope="col">Название товара</th>
+                  <th scope="col">Цена за штуку</th>
+                  <th scope="col">Количество</th>
+                    <th scope="col">Итоговая сумма</th>
+                    <th scope="col">Статус заказа</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-info">
+                  <th scope="row">1</th>
+                  <td>Чай Гринфилд черный</td>
+                    <td>200</td>
+                  <td>1</td>
+                    <td>200</td>
+                  <td>Новый</td>
+                </tr>
+                <tr class="table-warning">
+                  <th scope="row">2</th>
+                  <td>Кофе Якобс Монарх</td>
+                    <td>400</td>
+                  <td>2</td>
+                    <td>800</td>
+                  <td>Обработка</td>
+                </tr>
+                <tr class="table-success">
+                  <th scope="row">3</th>
+                  <td>Гвозди строительные</td>
+                    <td>100</td>
+                  <td>5</td>
+                    <td>500</td>
+                  <td>Обработан</td>
+                </tr>
+              <tr class="table-success">
+                  <th scope="row">4</th>
+                  <td>Ручка шариковая</td>
+                    <td>50</td>
+                  <td>2</td>
+                    <td>100</td>
+                  <td>Обработан</td>
+                </tr>
+              <tr class="table-danger">
+                  <th scope="row">5</th>
+                  <td>Жидкое мыло Дав</td>
+                    <td>250</td>
+                  <td>1</td>
+                    <td>250</td>
+                  <td>Отмена</td>
+                </tr>
+             <tr class="table-danger">
+                  <th scope="row">6</th>
+                  <td>Сахар свекольный</td>
+                    <td>100</td>
+                  <td>1</td>
+                    <td>100</td>
+                  <td>Отмена</td>
+                </tr>
+              </tbody>
+            </table>
+                </div>
+                    </main>
+                </div>
 
 </main>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
